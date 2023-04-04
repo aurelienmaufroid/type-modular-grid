@@ -16,7 +16,6 @@ PImage pattern, pattern2;
 float mouseXposition = 10;
 float patternPos = 1+mouseXposition;
 
-PShape patternShape; //specifical variable for svg file
 
 //Loup pointer effect variables
 int distancePointer = 500;
@@ -47,9 +46,7 @@ void setup(){
   f = createFont("Arial", size);
   
   pattern = loadImage("circleblur.png");
-  pattern2 = loadImage("circle.png");
-  
-  patternShape = loadShape("D_01.svg");
+  //pattern2 = loadImage("circleblur.png");
   
   
 }
@@ -97,7 +94,7 @@ void draw(){
                    
          image(pattern, x, y, patternPos, patternPos);
          //patternShape.disableStyle();
-         fill(9, 12, 155);
+         //fill(9, 12, 155);
          //shape(patternShape, x, y, patternPos, patternPos);
           
       }else {
